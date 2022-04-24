@@ -209,3 +209,11 @@ treemap.c:43:24: error: too few arguments to function 'lower_than'
                        ~^~~~~~~~~~~~
 Compilation failed
 1445a41
+do., 24 de abr. de 2022 19:39:15: 
+ treemap.c | 1 -
+ 1 file changed, 1 deletion(-)
+C:\Users\Admin\AppData\Local\Temp\ccqIlJil.o:test.c:(.text+0x7c1): undefined reference to `insertTreeMap'
+C:\Users\Admin\AppData\Local\Temp\ccqIlJil.o:test.c:(.text+0x857): undefined reference to `insertTreeMap'
+collect2.exe: error: ld returned 1 exit status
+Compilation failed
+5df8be3
