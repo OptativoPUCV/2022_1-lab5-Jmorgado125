@@ -239,3 +239,9 @@ treemap.c:66:1: error: expected expression before '}' token
 cc1.exe: all warnings being treated as errors
 Compilation failed
 e77b803
+do., 24 de abr. de 2022 19:40:11: 
+ treemap.c | 7 +++----
+ 1 file changed, 3 insertions(+), 4 deletions(-)
+ tests:  9|6
+total_score: 10/70
+0d7f3cf
