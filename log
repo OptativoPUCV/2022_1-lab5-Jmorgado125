@@ -59,3 +59,52 @@ treemap.c:125:9: error: expected ';' before '}' token
 cc1.exe: all warnings being treated as errors
 Compilation failed
 911abe0
+do., 24 de abr. de 2022 19:00:00: 
+ treemap.c | 32 ++++++++++++++++++--------------
+ 1 file changed, 18 insertions(+), 14 deletions(-)
+In file included from test.c:4:0:
+treemap.c: In function 'createTreeMap':
+treemap.c:41:17: error: expected '=', ',', ';', 'asm' or '__attribute__' before '->' token
+   TreeNode * aux->root= createTreeNode(key1);
+                 ^~
+treemap.c:41:17: error: expected expression before '->' token
+treemap.c:41:40: error: 'key1' undeclared (first use in this function)
+   TreeNode * aux->root= createTreeNode(key1);
+                                        ^~~~
+treemap.c:41:40: note: each undeclared identifier is reported only once for each function it appears in
+treemap.c:41:25: error: too few arguments to function 'createTreeNode'
+   TreeNode * aux->root= createTreeNode(key1);
+                         ^~~~~~~~~~~~~~
+treemap.c:29:12: note: declared here
+ TreeNode * createTreeNode(void* key, void * value) {
+            ^~~~~~~~~~~~~~
+treemap.c:42:17: error: expected '=', ',', ';', 'asm' or '__attribute__' before '->' token
+   TreeNode * aux->current=createTreeNode(key2);
+                 ^~
+treemap.c:42:17: error: expected expression before '->' token
+treemap.c:42:42: error: 'key2' undeclared (first use in this function)
+   TreeNode * aux->current=createTreeNode(key2);
+                                          ^~~~
+treemap.c:42:27: error: too few arguments to function 'createTreeNode'
+   TreeNode * aux->current=createTreeNode(key2);
+                           ^~~~~~~~~~~~~~
+treemap.c:29:12: note: declared here
+ TreeNode * createTreeNode(void* key, void * value) {
+            ^~~~~~~~~~~~~~
+treemap.c:43:7: error: unused variable 'valor' [-Werror=unused-variable]
+   int valor=aux->lower_than(key1,key2);
+       ^~~~~
+treemap.c: In function 'minimum':
+treemap.c:73:3: error: this 'else' clause does not guard... [-Werror=misleading-indentation]
+   else
+   ^~~~
+treemap.c:77:5: note: ...this statement, but the latter is misleadingly indented as if it is guarded by the 'else'
+     return x;
+     ^~~~~~
+treemap.c: In function 'firstTreeMap':
+treemap.c:115:9: error: expected ';' before '}' token
+         }
+         ^
+cc1.exe: all warnings being treated as errors
+Compilation failed
+a245a59
