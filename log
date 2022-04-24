@@ -126,3 +126,12 @@ treemap.c:115:9: error: expected ';' before '}' token
 cc1.exe: all warnings being treated as errors
 Compilation failed
 66ae0d1
+do., 24 de abr. de 2022 19:01:22: 
+ treemap.c | 5 +++--
+ 1 file changed, 3 insertions(+), 2 deletions(-)
+C:\Users\Admin\AppData\Local\Temp\cckBg1ay.o:test.c:(.text+0x474): undefined reference to `createTreeMap'
+C:\Users\Admin\AppData\Local\Temp\cckBg1ay.o:test.c:(.text+0x794): undefined reference to `insertTreeMap'
+C:\Users\Admin\AppData\Local\Temp\cckBg1ay.o:test.c:(.text+0x82a): undefined reference to `insertTreeMap'
+collect2.exe: error: ld returned 1 exit status
+Compilation failed
+ad59e45

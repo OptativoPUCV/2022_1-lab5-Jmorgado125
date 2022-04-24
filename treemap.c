@@ -70,11 +70,12 @@ TreeNode * minimum(TreeNode * x){
   if(x->left==NULL){
     return x;
   }
-  else
+  else{
     while(x->left !=NULL){
       x=x->left;
     }
     return x;
+  }
 }
 
 
@@ -111,7 +112,7 @@ Pair * firstTreeMap(TreeMap * tree) {
     }
     else 
         while(tree->current->left != NULL){
-            tree->current=tree->current->left
+            tree->current=tree->current->left;
         }
     return tree->current->pair;
 }
