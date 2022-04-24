@@ -256,3 +256,9 @@ treemap.c:40:3: error: 'aux' undeclared (first use in this function)
 treemap.c:40:3: note: each undeclared identifier is reported only once for each function it appears in
 Compilation failed
 031117a
+do., 24 de abr. de 2022 19:45:13: 
+ treemap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  10|5
+total_score: 15/70
+96030b8
