@@ -185,3 +185,13 @@ treemap.c:44:18: error: assignment makes pointer from integer without a cast [-W
 cc1.exe: all warnings being treated as errors
 Compilation failed
 5f89305
+do., 24 de abr. de 2022 19:24:46: 
+ treemap.c | 3 +--
+ 1 file changed, 1 insertion(+), 2 deletions(-)
+In file included from test.c:4:0:
+treemap.c: In function 'createTreeMap':
+treemap.c:43:19: error: expected expression before 'int'
+   aux->lower_than=int (*lower_than) (void* key1, void* key2);
+                   ^~~
+Compilation failed
+4e985fb
