@@ -135,3 +135,36 @@ C:\Users\Admin\AppData\Local\Temp\cckBg1ay.o:test.c:(.text+0x82a): undefined ref
 collect2.exe: error: ld returned 1 exit status
 Compilation failed
 ad59e45
+do., 24 de abr. de 2022 19:23:10: 
+ treemap.c | 13 +++++++------
+ 1 file changed, 7 insertions(+), 6 deletions(-)
+In file included from test.c:4:0:
+treemap.c: In function 'createTreeMap':
+treemap.c:41:25: error: 'key1' undeclared (first use in this function)
+   int result=lower_than(key1,key2);
+                         ^~~~
+treemap.c:41:25: note: each undeclared identifier is reported only once for each function it appears in
+treemap.c:41:30: error: 'key2' undeclared (first use in this function)
+   int result=lower_than(key1,key2);
+                              ^~~~
+treemap.c:44:18: error: assignment makes pointer from integer without a cast [-Werror=int-conversion]
+   aux->lower_than=result;
+                  ^
+treemap.c: In function 'insertTreeMap':
+treemap.c:50:11: error: expected ')' before 'valor'
+   if((int valor=tree->lower_than(tree->root,key)==1){
+           ^~~~~
+treemap.c:51:5: error: initialization makes integer from pointer without a cast [-Werror=int-conversion]
+     tree->current=tree->root;
+     ^~~~
+treemap.c:51:5: note: (near initialization for '(anonymous)')
+treemap.c:51:29: error: expected '}' before ';' token
+     tree->current=tree->root;
+                             ^
+treemap.c:68:1: error: expected ')' before '}' token
+ }
+ ^
+treemap.c:68:1: error: expected expression before '}' token
+cc1.exe: all warnings being treated as errors
+Compilation failed
+b23703d
