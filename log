@@ -245,3 +245,14 @@ do., 24 de abr. de 2022 19:40:11:
  tests:  9|6
 total_score: 10/70
 0d7f3cf
+do., 24 de abr. de 2022 19:44:58: 
+ treemap.c | 1 +
+ 1 file changed, 1 insertion(+)
+In file included from test.c:4:0:
+treemap.c: In function 'createTreeMap':
+treemap.c:40:3: error: 'aux' undeclared (first use in this function)
+   aux->lower_than=lower_than;
+   ^~~
+treemap.c:40:3: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+031117a
