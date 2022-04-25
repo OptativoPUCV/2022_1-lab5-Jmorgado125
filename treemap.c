@@ -132,7 +132,6 @@ Pair * nextTreeMap(TreeMap * tree) {
       }
       else
         return tree->current->parent->pair;
-        break;
     }
   }
 

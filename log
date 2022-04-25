@@ -566,3 +566,9 @@ treemap.c:135:9: note: ...this statement, but the latter is misleadingly indente
 cc1.exe: all warnings being treated as errors
 Compilation failed
 14c4cae
+do., 24 de abr. de 2022 21:55:35: 
+ treemap.c | 1 -
+ 1 file changed, 1 deletion(-)
+ tests:  12|5
+total_score: 15/70
+9b93ca1
