@@ -104,7 +104,7 @@ Pair * searchTreeMap(TreeMap * tree, void* key) {
 
 
 Pair * upperBound(TreeMap * tree, void* key) {
-    return NULL;
+  return NULL;
 }
 
 Pair * firstTreeMap(TreeMap * tree) {
@@ -127,13 +127,12 @@ Pair * nextTreeMap(TreeMap * tree) {
   else{
     while (tree->current->parent != NULL)
     {
-      if(tree->lower_than(tree->current->parent, tree->current)==1){
+      if(tree->lower_than(tree->current->parent->pair, tree->current->pair)==1){
         tree->current=tree->current->parent;
       }
       else
         return tree->current->parent->pair;
     }
   }
-
   return tree->current->pair;
 }
