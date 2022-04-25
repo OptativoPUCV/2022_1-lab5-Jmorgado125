@@ -752,3 +752,12 @@ do., 24 de abr. de 2022 23:20:40:
  tests:  12|5
 total_score: 15/70
 06b41c4
+do., 24 de abr. de 2022 23:23:06: 
+ treemap.c | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+In file included from test.c:4:0:
+treemap.c:79:1: error: expected identifier or '(' before '}' token
+ }
+ ^
+Compilation failed
+c171df9
