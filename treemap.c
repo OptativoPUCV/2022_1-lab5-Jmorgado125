@@ -55,30 +55,29 @@ void insertTreeMap(TreeMap * tree, void* key, void * value) {
     return;
   }
   else{
-  nodo=createTreeNode(key,value);
-  tree->current=tree->root;
-  while(tree->current != NULL){
-    if(tree->lower_than(key,tree->current)==1){
-      tree->current=tree->current->left;
-      if(tree->current->left == NULL){
-        tree->current->left=nodo;
-        tree->current=nodo;
-        break;
+    nodo=createTreeNode(key,value);
+    tree->current=tree->root;
+    while(tree->current != NULL){
+      if(tree->lower_than(key,tree->current)==1){
+        tree->current=tree->current->left;
+        if(tree->current->left == NULL){
+          tree->current->left=nodo;
+          tree->current=nodo;
+          break;
+       }
       }
-    }
-    else if(tree->lower_than(tree->current,key)==1){
-      tree->current=tree->current->right;
-      if(tree->current->right == NULL){
-        tree->current->right=nodo;
-        tree->current=nodo;
-        break;
-      }
-    }
-    else{
-      return;
+      else if(tree->lower_than(tree->current,key)==1){
+        tree->current=tree->current->right;
+        if(tree->current->right == NULL){
+          tree->current->right=nodo;
+          tree->current=nodo;
+          break;
+        }
+      }      
     }
   }
 }
+
 
 TreeNode * minimum(TreeNode * x){
   if(x->left==NULL){
