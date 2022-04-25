@@ -664,3 +664,13 @@ do., 24 de abr. de 2022 22:38:05:
  1 file changed, 2 insertions(+)
  tests:  0|0
 986d47b
+do., 24 de abr. de 2022 22:41:34: 
+ treemap.c | 9 +++++----
+ 1 file changed, 5 insertions(+), 4 deletions(-)
+In file included from test.c:4:0:
+treemap.c: In function 'insertTreeMap':
+treemap.c:58:3: error: 'else' without a previous 'if'
+   else
+   ^~~~
+Compilation failed
+d46dacf
