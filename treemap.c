@@ -121,13 +121,11 @@ Pair * firstTreeMap(TreeMap * tree) {
 }
 
 Pair * nextTreeMap(TreeMap * tree) {
+  if(tree->current==tree->root && tree->root->right == NULL){return NULL;}
   if(tree->current->right !=NULL){
     tree->current=minimum(tree->current->right);
   }
   else{
-    if(tree->current->parent == NULL && tree->root->right == NULL){
-      return NULL;
-    }
     while (tree->current->parent != NULL)
     {
       if(tree->lower_than(tree->current->parent, tree->current)==1){
