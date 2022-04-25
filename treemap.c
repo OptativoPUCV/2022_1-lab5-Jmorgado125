@@ -110,6 +110,7 @@ Pair * upperBound(TreeMap * tree, void* key) {
     if(tree->lower_than(key,ubNode->pair->key)==1){
       aux=ubNode;
       ubNode=ubNode->left;
+      continue;
     }
     else if (tree->lower_than(ubNode->pair->key,key)==1)
     {
@@ -118,6 +119,7 @@ Pair * upperBound(TreeMap * tree, void* key) {
       if(tree->lower_than(ubNode->pair->key,ubNode->pair->key)==1)
       {
         aux=ubNode;
+        continue;
       }
       else continue;
     }
