@@ -77,6 +77,8 @@ TreeNode * minimum(TreeNode * x){
 
 
 void removeNode(TreeMap * tree, TreeNode* node) {
+  if(tree == NULL && tree->root == NULL){return;}
+  if(tree->root==node){}
 
 }
 
@@ -123,6 +125,7 @@ Pair * nextTreeMap(TreeMap * tree) {
     tree->current=minimum(tree->current->right);
   }
   else{
+    if(tree->current->parent == NULL && tree->current->right == NULL){return NULL;}
     while (tree->current->parent != NULL)
     {
       if(tree->lower_than(tree->current, tree->current->parent)==1){
@@ -132,6 +135,7 @@ Pair * nextTreeMap(TreeMap * tree) {
       else
         tree->current=tree->current->parent;
     }
+    
   }
   
   return tree->current->pair;
