@@ -168,6 +168,11 @@ Pair * nextTreeMap(TreeMap * tree) {
   if(tree->current->right !=NULL){
     tree->current=minimum(tree->current->right);
   }
+  else if (tree->current->parent == NULL && tree->current->right == NULL)
+  {
+    return NULL;
+  }
+  
   else{
     while (tree->current->parent != NULL)
     {
