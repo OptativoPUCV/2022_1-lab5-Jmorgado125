@@ -133,7 +133,9 @@ Pair * nextTreeMap(TreeMap * tree) {
       else
         return tree->current->parent->pair;
     }
-    if(tree->current->parent==NULL){return NULL;}
+    if(tree->current->parent==NULL){
+      if(tree->current->right == NULL){return NULL;}
+    }
   }
 
   return tree->current->pair;
