@@ -819,3 +819,8 @@ treemap.c:50:14: error: unused variable 'nodo' [-Werror=unused-variable]
 cc1.exe: all warnings being treated as errors
 Compilation failed
 0b4c813
+do., 24 de abr. de 2022 23:41:15: 
+ treemap.c | 1 -
+ 1 file changed, 1 deletion(-)
+ tests:  0|0
+101f149
