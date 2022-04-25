@@ -129,12 +129,12 @@ Pair * nextTreeMap(TreeMap * tree) {
     {
       if(tree->lower_than(tree->current, tree->current->parent)==1){
         tree->current=tree->current->parent;
+        if(tree->current->parent == NULL && tree->current->right == NULL){return NULL;}
         break;
       }
       else
         tree->current=tree->current->parent;
     }
   }
-  if(tree->current->parent == NULL && tree->current->right == NULL){return NULL;}
   return tree->current->pair;
 }
